@@ -7,42 +7,39 @@ function Contact() {
     <div className="contact">
       <PageTitleBanner title="Contact" />
       <div className="contact-content">
-        <p>Contact us using the form down below.</p>
+        <h2>Contact us using the email down below.</h2>
       </div>
       <div className="contact-form">
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-        >
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" placeholder="Name" />
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" placeholder="Email" />
-          <label htmlFor="message">Message</label>
-          <textarea name="message" placeholder="Message" />
-          <button type="submit">Send</button>
-        </form>
+        <a href="mailto:lnp@lnp-group.com">Email us here.</a>
       </div>
       <div className="social-links">
         <h2>Social media</h2>
         <ul>
           <li>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/LNPYTOficial">
               Facebook
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/LNPYTOfficial">
               Instagram
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/">
+            <a href="https://twitter.com/LNPYTOfficial">
               Twitter
             </a>
           </li>
+          <li>
+            <a href="https://www.youtube.com/@LNPYTOfficial">
+              YouTube
+            </a>
+          </li>
         </ul>
+      </div>
+      <div className="contact-thank-you">
+        <h2>Thank you for wanting to contact us!</h2>
+        <p>We're looking forward to hearing from you!</p>
       </div>
     </div>
   )

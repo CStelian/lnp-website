@@ -1,8 +1,12 @@
 
 .contact {
 
+    height: 100vh;
+
     .contact-content {
         text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     
     .contact-form {
@@ -11,47 +15,23 @@
         padding: 0 1rem;
         width: 100%;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            max-width: 20rem;
-            padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-            input, textarea, button {
-                margin: 0.5rem 0;
-                width: 100%;
-            }
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
 
-            input, textarea {
-                border: 1px solid #0000ff;
-                background: none;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #0000ff;
+
+            &:hover {
+                background-color: #fff;
                 color: #0000ff;
-                border-radius: 4px;
-                padding: 0.5rem;
-
-                &:focus {
-                    outline: #0000ff;
-                    outline-width: 2rem;
-                }
-            }
-
-            button {
-                background: #0000ff;
-                color: #fff;
-                border: none;
-                border-radius: 4px;
-                padding: 0.5rem;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                    background: #fff;
-                    color: #0000ff;
-                    border: 1px solid #0000ff;
-                }
             }
         }
     }
@@ -65,6 +45,7 @@
         max-width: 600px;
         padding: 0 1rem;
         width: 100%;
+        margin-top: 2rem;
         margin-bottom: 2rem;
 
         ul {
@@ -86,6 +67,33 @@
                     color: #fff;
                 }
             }
+        }
+    }
+
+    .contact-thank-you {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0 1rem;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
         }
     }
 }
