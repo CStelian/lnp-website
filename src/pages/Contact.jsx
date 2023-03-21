@@ -14,25 +14,6 @@ function Contact() {
           name="contact"
           method="POST"
           data-netlify="true"
-          onSubmit={e => {
-            e.preventDefault()
-            const form = e.target
-            const data = new FormData(form)
-            const xhr = new XMLHttpRequest()
-            xhr.open(form.method, form.action)
-            xhr.setRequestHeader('Accept', 'application/json')
-            xhr.onreadystatechange = () => {
-              if (xhr.readyState !== XMLHttpRequest.DONE) return
-              if (xhr.status === 200) {
-                form.reset()
-                alert('Thanks for contacting us!')
-              } else {
-                alert('Oops! There was a problem.')
-              }
-            }
-            xhr.send(data)
-          }
-        }
         >
           <label htmlFor="name">Name</label>
           <input type="text" name="name" placeholder="Name" />
