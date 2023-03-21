@@ -1,8 +1,11 @@
 import React from 'react'
+import PageTitleBanner from '../components/PageTitleBanner'
 
 function Contact() {
   return (
-    <div><h1>Contact</h1></div>
+    <div className="contact">
+      <PageTitleBanner title="Contact" />
+    </div>
   )
 }
 
